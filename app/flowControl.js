@@ -2,6 +2,28 @@ exports = typeof window === 'undefined' ? global : window;
 
 exports.flowControlAnswers = {
   fizzBuzz: function(num) {
+
+    var retValue ;
+
+    if ( typeof num !== 'number' )
+    {
+      retValue = false ;
+    }
+      else if  ( num % 3 === 0 && num % 5 !== 0 )
+    {
+      retValue = 'fizz' ;
+    } else if ( num % 5 === 0 && num % 3 !== 0 )
+    {
+      retValue = 'buzz' ;
+    } else if ( num % 3 === 0 && num % 5 === 0 )
+    {
+      retValue = 'fizzbuzz' ;
+    } else if ( num % 3 !== 0 && num % 5 !== 0 )
+    {
+      retValue = num ;
+    }
+
+    return retValue ;
     // write a function that receives a number as its argument;
     // if the number is divisible by 3, the function should return 'fizz';
     // if the number is divisible by 5, the function should return 'buzz';
