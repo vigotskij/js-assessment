@@ -16,7 +16,15 @@ exports.functionsAnswers = {
   functionFunction: function(str) {
       return function stringer( word )
        {
-         return word += word ;
+         var phrase ;
+         if ( word = 'world')
+         {
+           phrase = 'Hello, ' + word ;
+         } else {
+           phrase = 'Hai, ' + word ;
+         }
+
+         return phrase ;
        }
   },
 
