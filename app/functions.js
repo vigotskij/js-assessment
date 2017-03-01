@@ -14,8 +14,10 @@ exports.functionsAnswers = {
   },
 
   functionFunction: function(str) {
-      var t = typeof str() ;
-      return t ;
+      return function stringer( word )
+       {
+         return word += word ;
+       }
   },
 
   makeClosures: function(arr, fn) {
