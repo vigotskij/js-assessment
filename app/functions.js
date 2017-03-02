@@ -14,23 +14,15 @@ exports.functionsAnswers = {
   },
 
   functionFunction: function(str) {
-      return function stringer( word )
+      return function stringer( str2 )
        {
-         var phrase ;
-         if ( word = 'world')
-         {
-           phrase = 'Hello, ' + word ;
-         } else {
-           phrase = 'Hai, ' + word ;
-         }
-
-         return phrase ;
+         return str + ', ' + str2 ;
        }
   },
 
   makeClosures: function(arr, fn) {
 
-    return fn.apply ( arr ) ;
+    return fn.apply ( fn , arr ) ;
   },
 
   partial: function(fn, str1, str2) {
